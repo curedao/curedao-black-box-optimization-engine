@@ -1,7 +1,9 @@
 # A Control Systems Engineering Approach to Precision Medicine
+![image](optomitron.png)
 
-To determine effects of various factors on health outcomes, we currently apply pharmacokinetic modeling over various onset delay and duration of action 
-hyper-parameters and combine that with some other parameters for each of Hill's criteria for causality.  
+☝️The image above is what we're trying to achieve here.
+
+To determine the effects of various factors on health outcomes, we currently apply pharmacokinetic modeling over various onset delay and duration of action hyper-parameters and combine that with some other parameters for each of Hill's criteria for causality.  
 
 The distributions in this type of data aren't super normal, and you've got the onset delays and durations of action so regular Pearson correlations don't work so well. So we mainly focus on change from baseline. There's a ton of room for improvement by controlling using instrumental variables or convolutional recursive neural networks.
 
@@ -20,12 +22,12 @@ time.
 
 ### Format
 
-The first row is the variable names. The first column is unix timestamp (seconds since 1970-01-01 00:00:00 UTC). 
+The first row is the variable names. The first column is Unix timestamp (seconds since 1970-01-01 00:00:00 UTC). 
 
 ### Pre-Processing
 
 To make it easier to analyze some preprocessing has been done. This includes zero-filling where appropriate.  Also, 
-the factor measurement values are aggregated values preceding the Arthritis  measurements based on the _onset 
+the factor measurement values are aggregated values preceding the Arthritis measurements based on the _onset 
 delay_ and _duration of action_.  
 
 ### Hyper-Parameters
